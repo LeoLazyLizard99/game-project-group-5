@@ -1,3 +1,3 @@
 # game-project
 first lab project. \
-Group 8: Florian, name2, name3
+Group 5: Florian, name2, name3
