@@ -1,37 +1,35 @@
 # Lab 1
 # Group 5
-# Florian, name2, name3
+# Florian
 # Date: 9/22/2026
 
 import num_guess_game
 import rps_game
-def main():
-    if __name__ == "__main__":
+
+def runGame(x):
+    if x == "1":
+        print("The Random Number Guessing game is a great choice!")
+        num_guess_game.num_game()
+    elif x == "2":
+        print("Rock Paper Scissors, this will be fun")
+        #run func for game here
+
+def Main():
+    playing = True
+    while playing:
         print("""
-        Hello! 
+        Hello!
         What game would you like to play?
         [1] Random Number Guessing
         [2] Rock Paper Scissors
         """)
         game = input("what game?: ")
+        runGame(game)
 
-        if game == "1":
-            print("The Random Number Guessing game is a great choice!")
-            #run func for game here
-        elif game == "2":
-            print("Rock Paper Scissors, this will be fun")
-            #run func for game here
-    if __name__ != "__main__":
-        print("""
-        play a different game?
-        [1] Random Number Guessing
-        [2] Rock Paper Scissors
-        """)
-        game = input("what game?: ")
+        again = input("Play a different game? (y/n): ").strip().lower()
+        if again != "y":
+            playing = False
+            print("Thanks for playing!")
 
-        if game == "1":
-            print("The Random Number Guessing game is a great choice!")
-            #run func for game here
-        elif game == "2":
-            print("Rock Paper Scissors, this will be fun")
-            #run func for game here
+if __name__ == "__main__":
+    Main()
