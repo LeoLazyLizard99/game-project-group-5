@@ -10,7 +10,7 @@ def runGame(x):
     if x == "1":
         print("The Random Number Guessing game is a great choice!")
         print("")
-        num_guess_game.num_game()
+        num_guess_game.numGame()
     elif x == "2":
         print("Rock Paper Scissors, this will be fun")
         #run func for game here
