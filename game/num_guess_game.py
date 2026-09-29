@@ -1,4 +1,7 @@
-#number game
+# Lab 1
+# Group 5
+# Nadwr
+# Date: 9/28/2026
 
 import random
 def numGame():
