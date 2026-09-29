@@ -13,7 +13,7 @@ def runGame(x):
         num_guess_game.numGame()
     elif x == "2":
         print("Rock Paper Scissors, this will be fun")
-        #run func for game here
+        rps_game.rock_paper_scissors()
 
 def Main():
     playing = True
